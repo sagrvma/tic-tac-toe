@@ -6,8 +6,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
+
+  height: 100vh;
+  background-color: rgb(62, 62, 62);
 }
 
 #gameboard {
@@ -15,26 +17,28 @@ body {
   width: 300px;
   background-color: black;
   display: flex;
-  flex-wrap: wrap-reverse;
-  border: solid 2px black;
+  flex-wrap: wrap;
+  border: solid 10px rgb(18, 18, 18);
+  border-radius: 5px;
 }
 
 .square {
   height: 100px;
   width: 100px;
-  background-color: white;
-  border: solid 1px black;
+  background-color: rgb(45, 45, 45);
+  border: solid 3px rgb(18, 18, 18);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .circle {
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  border: 15px solid blue;
+  border: 15px solid rgb(213, 116, 12);
   box-sizing: border-box;
 }
 
@@ -49,7 +53,7 @@ body {
 .cross::after {
   content: "";
   position: absolute;
-  background-color: red;
+  background-color: rgb(0, 129, 155);
 }
 
 .cross::before {
@@ -64,4 +68,10 @@ body {
   height: 30%;
   width: 100%;
   margin-top: -15%;
+}
+
+#info {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(168, 168, 168);
 }
